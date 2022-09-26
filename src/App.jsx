@@ -51,7 +51,7 @@ function App() {
                     {book.name}
                 </div>
             </div>
-            <ImgShow img={book.img} imgUrl={book.link} />
+            <ImgShow img={book.img} url={book.link} />
             <div className="text-center p-1 text-slate-600">
                 ผู้เขียน <b>{book.writer}</b>
             </div>
