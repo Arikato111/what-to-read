@@ -1,11 +1,19 @@
 # อ่านอะไรดี ?
 
 ## Get started 
-`pnpm install` and `pnpm dev`
+- clone repository
+- `pnpm install` 
+- `pnpm dev`
 
-## Inside
+## Inside it
 
 - React + Vite + Tailwindcss
 - Book data is in Data/BookList.json
 
 - [More book](https://www.se-ed.com/)
+
+## TODOs
+
+- [ ] show all book
+- [ ] mobile screen support
+- [ ] upgrade front-end style
