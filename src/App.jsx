@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import { useState } from "react";
 import "./App.css";
 import BookList from "./Data/BookList.json";
+import { Link } from "react-router-dom";
 
 import Github from "./components/Github";
 import ImgShow from "./components/ImgShow";
@@ -20,6 +21,7 @@ function App() {
     useEffect(() => {
         // load first content
         randomBook();
+        setCount(10);
     }, []);
 
     useEffect(() => {
@@ -55,6 +57,11 @@ function App() {
             <div className="text-center p-1 text-slate-600">
                 ผู้เขียน <b>{book.writer}</b>
             </div>
+            <Link to={"/books"}>
+                <div className="fixed bottom-0 left-0 p-2 m-2 bg-yellow-200 hover:bg-yellow-300 text-slate-800 rounded">
+                    หนังสือทั้งหมด
+                </div>
+            </Link>
             <Github />
         </main>
     );

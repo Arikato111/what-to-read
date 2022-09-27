@@ -14,6 +14,6 @@
 
 ## TODOs
 
-- [ ] show all book
-- [ ] mobile screen support
+- [x] show all book
+- [x] mobile screen support
 - [ ] upgrade front-end style

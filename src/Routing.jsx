@@ -7,7 +7,7 @@ export default function Routing() {
     return (
         <Router>
             <Routes>
-                <Route path="/all-book" element={<AllBook />} />
+                <Route path="/books" element={<AllBook />} />
                 <Route path="/" element={<App />} />
                 <Route path="*" element={<Notfound />} />
             </Routes>

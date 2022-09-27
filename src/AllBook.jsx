@@ -1,10 +1,22 @@
 import BookList from "./Data/BookList.json";
 import ImgShow from "./components/ImgShow";
+import { Link } from "react-router-dom";
+
+import BigButton from "./components/BigButton";
 
 export default function AllBook() {
     return (
         <main>
-            <h1 className="text-center text-4xl p-10">รายการหนังสือทั้งหมด</h1>
+            <h1 className="text-center text-4xl m-1">
+                <span className="bg-purple-500 text-white py-1 px-5 rounded">
+                    รายการหนังสือทั้งหมด
+                </span>
+            </h1>
+            <div className="text-center text-4xl  pb-5 m-1">
+                <Link to={"/"}>
+                    <BigButton title="อ่านอะไรดี" onclick={() => {}} />
+                </Link>
+            </div>
             <div className="grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 grid">
                 {BookList.map((book) => {
                     return (
