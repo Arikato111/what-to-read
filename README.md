@@ -11,10 +11,10 @@
 - react-router-dom
 - Book data is in Data/BookList.json
 
-- [More book](https://www.se-ed.com/)
+- Morebook at [Se-ed](https://www.se-ed.com/) - [Naiin](https://www.naiin.com/)
 
 ## TODOs
 
 - [x] show all book
 - [x] mobile screen support
-- [ ] upgrade front-end style
+- [x] upgrade front-end style
