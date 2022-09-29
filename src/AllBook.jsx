@@ -3,7 +3,11 @@ import ImgShow from "./components/ImgShow";
 import { Link } from "react-router-dom";
 
 import BigButton from "./components/BigButton";
+import { useEffect } from "react";
 const ShowAllBook = () => {
+    useEffect(()=> {
+        document.title = "หนังสือทั้งหมด"
+    }, [])
     return (
         <div className="grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 2xl:grid-cols-5 grid">
             {BookList.map((book, id) => {
