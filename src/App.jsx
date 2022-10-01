@@ -15,7 +15,7 @@ function App() {
     // for random book
     const randomBook = () => {
         let result = Math.floor(Math.random() * BookList.length);
-        document.title = BookList[result].name // change title by book's name
+        document.title = BookList[result].name; // change title by book's name
         setBook(BookList[result]);
     };
 
@@ -63,7 +63,12 @@ function App() {
             </div>
             <ImgShow img={book.img} url={book.link} name={book.name} />
             <div className="text-center p-1 text-slate-600">
-                <a title="คลิกเพื่อค้นหาผู้เขียนบน Google" className="underline sm:no-underline hover:underline inline-block" target={"_blank"} href={`https://www.google.com/search?q=${book.writer}`}>
+                <a
+                    title="คลิกเพื่อค้นหาผู้เขียนบน Google"
+                    className="underline sm:no-underline hover:underline inline-block"
+                    target={"_blank"}
+                    href={`https://www.google.com/search?q=${book.writer}`}
+                >
                     ผู้เขียน <b>{book.writer}</b>
                 </a>
             </div>
