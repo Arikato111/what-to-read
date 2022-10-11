@@ -11,7 +11,7 @@ export default function SingleBook() {
   if (theBook.length < 1) {
     return <Navigate to={"/"} />;
   }
-  console.log(theBook);
+  document.title = theBook.name;
   return (
     <main className="box-border  bg-purple-50  min-h-screen">
       <div className="flex min-h-screen justify-center items-center flex-col">

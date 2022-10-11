@@ -12,17 +12,16 @@ const ShowAllBook = () => {
       {BookList.map((book, id) => {
         return (
           <div key={id} className="pb-10">
-            <div className="text-center text-slate-800 text-lg">
-              <a
+            <div className="text-center text-slate-800 text-2xl sm:text-lg">
+              <Link
                 className="hover:underline inline-block transition-all"
-                href={`https://www.google.com/search?q=${book.name}`}
-                target={"_blank"}
-                title="คลิกเพื่อค้นหาหนังสือเล่มนี้บน Google"
+                to={`/${book.name}`}
+                title="คลิกเพื่อชมสิ่งที่หน้าสนใจ"
               >
                 <b>{book.name}</b>
-              </a>
+              </Link>
             </div>
-            <div className="text-center p-1 text-slate-600">
+            <div className="text-center text-xl sm:text-base p-1 text-slate-600">
               <a
                 title="คลิกเพื่อค้นหาผู้เขียนบน Google"
                 className="underline sm:no-underline hover:underline inline-block"
