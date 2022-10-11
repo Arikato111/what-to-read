@@ -3,7 +3,7 @@ export default function ImgShow({ url, img, name }) {
     <div className="text-center">
       <a target="_blank" href={url}>
         <img
-          className="hover:scale-105 hover:opacity-75 shadow-md hover:shadow-none shadow-slate-400 transition-all w-52 inline-block border-2 rounded border-purple-400 p-1"
+          className="opacity-90 hover:opacity-100 shadow-lg hover:shadow-gray-400 transition-all w-52 inline-block border-2 rounded-lg border-purple-400  duration-300"
           src={img}
           title={name ?? ""}
           alt="book image"

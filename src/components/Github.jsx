@@ -1,6 +1,6 @@
 export default function Github() {
   return (
-    <div className="fixed bottom-0 p-1 right-0 hover:opacity-70 transition-all">
+    <div className="fixed bottom-0 p-1 right-0 opacity-90 hover:opacity-100 transition-all">
       <a
         target="_blank"
         href="https://github.com/Arikato111/what-to-read"

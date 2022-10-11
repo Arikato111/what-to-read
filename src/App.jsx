@@ -14,11 +14,12 @@ function App() {
   // for random book
   const randomBook = () => {
     let result = Math.floor(Math.random() * BookList.length);
-    document.title = BookList[result].name; // change title by book's name
+    // document.title = BookList[result].name; // change title by book's name
     setBook(BookList[result]);
   };
 
   useEffect(() => {
+    document.title = "อ่านอะไรดี";
     // load first content
     randomBook();
     setCount(10);
@@ -72,7 +73,7 @@ function App() {
         </a>
       </div>
       <Link to={"/books"}>
-        <div className="fixed bottom-0 left-0 p-2 m-2 bg-yellow-200 hover:bg-yellow-300 text-slate-800 rounded">
+        <div className="shadow hover:shadow-gray-400 fixed bottom-0 left-0 p-2 m-2 bg-yellow-200 hover:bg-yellow-300 text-slate-800 rounded transition-all duration-300">
           หนังสือทั้งหมด
         </div>
       </Link>

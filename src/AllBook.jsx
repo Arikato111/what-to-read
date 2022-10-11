@@ -13,10 +13,24 @@ const ShowAllBook = () => {
         return (
           <div key={id} className="pb-10">
             <div className="text-center text-slate-800 text-lg">
-              <b>{book.name}</b>
+              <a
+                className="hover:underline inline-block transition-all"
+                href={`https://www.google.com/search?q=${book.name}`}
+                target={"_blank"}
+                title="คลิกเพื่อค้นหาหนังสือเล่มนี้บน Google"
+              >
+                <b>{book.name}</b>
+              </a>
             </div>
             <div className="text-center p-1 text-slate-600">
-              ผู้เขียน <b>{book.writer}</b>
+              <a
+                title="คลิกเพื่อค้นหาผู้เขียนบน Google"
+                className="underline sm:no-underline hover:underline inline-block"
+                target={"_blank"}
+                href={`https://www.google.com/search?q=${book.writer}`}
+              >
+                ผู้เขียน <b>{book.writer}</b>
+              </a>
             </div>
             <ImgShow img={book.img} url={book.link} name={book.name} />
             <div></div>
@@ -33,7 +47,7 @@ export default function AllBook() {
   return (
     <main>
       <h1 className="text-center text-4xl m-1">
-        <span className="text-2xl sm:text-4xl bg-purple-700 shadow-md shadow-slate-400 text-white py-1 px-5 rounded">
+        <span className="text-2xl sm:text-4xl bg-purple-700 shadow shadow-slate-400 text-white py-1 px-5 rounded-lg">
           รายการหนังสือทั้งหมด
         </span>
       </h1>

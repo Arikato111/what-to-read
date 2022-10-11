@@ -166,5 +166,34 @@
         "writer": "ฮอนดะ เคน",
         "img": "https://storage.naiin.com/system/application/bookstore/resource/product/201703/211565/1000195312_front_XXL.jpg",
         "link": "https://www.naiin.com/product/detail/211565"
+    },
+    {
+        "name": "สำเร็จสบายสบายเพราะเรียนรู้ไวแบบคนขี้เกียจ",
+        "writer": "นะโอะยุกิ ฮนดะ",
+        "img": "https://storage.naiin.com/system/application/bookstore/resource/product/202202/541413/1000246411_front_XXL.jpg",
+        "link": "https://www.naiin.com/product/detail/541413/"
+    },
+    {
+        "name": "UNICORN TEARS",
+        "writer": "Jamie Pride",
+        "img": "https://storage.naiin.com/system/application/bookstore/resource/product/202002/500276/1000231052_front_XXL.jpg",
+        "link": "https://www.naiin.com/product/detail/500276/"
+    },
+    {
+        "name": "The Hobbit",
+        "writer": "เจ.อาร์.อาร์ โทลคีน",
+        "img": "https://storage.naiin.com/system/application/bookstore/resource/product/201209/91227/1000130764_front_XXL.jpg"
+    },
+    {
+        "name": "แด่เธอผู้เปล่งประกายใต้แสงจันทร์",
+        "writer": "ซาโนะ เท็ตสึยะ",
+        "img": "https://storage.naiin.com/system/application/bookstore/resource/product/202108/531619/1000242656_front_XXL.jpg",
+        "link": "https://www.naiin.com/product/detail/531619/"
+    },
+    {
+        "name": "ให้มันเป็นความลับต่อไป",
+        "writer": "Yoru Sumino",
+        "img": "https://storage.naiin.com/system/application/bookstore/resource/product/201910/492819/1000226623_front_XXL.jpg",
+        "link": "https://www.naiin.com/product/detail/492819/"
     }
 ]
