@@ -12,7 +12,7 @@ const ShowAllBook = () => {
       {BookList.map((book, id) => {
         return (
           <div key={id} className="pb-10">
-            <div className="text-center text-slate-800 text-2xl sm:text-lg">
+            <div className="text-center text-slate-800 text-xl sm:text-lg">
               <Link
                 className="hover:underline inline-block transition-all"
                 to={`/${book.name}`}
@@ -21,7 +21,7 @@ const ShowAllBook = () => {
                 <b>{book.name}</b>
               </Link>
             </div>
-            <div className="text-center text-xl sm:text-base p-1 text-slate-600">
+            <div className="text-center text-lg sm:text-base p-1 text-slate-600">
               <a
                 title="คลิกเพื่อค้นหาผู้เขียนบน Google"
                 className="underline sm:no-underline hover:underline inline-block"
