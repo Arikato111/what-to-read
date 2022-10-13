@@ -1,19 +1,21 @@
-import { useEffect } from "react";
+import { FC, useEffect } from "react";
 import { useState } from "react";
 import BookList from "./Data/BookList.json";
 import { Link } from "react-router-dom";
+import { BookInput } from "./components/interface";
 
 import Github from "./components/Github";
 import ImgShow from "./components/ImgShow";
 import BigButton from "./components/BigButton";
 
-function App() {
-  const [book, setBook] = useState({}); // keep book details
-  const [count, setCount] = useState(0); // keep random count
+const App: FC = () => {
+
+  const [book, setBook] = useState<BookInput>({}); // keep book details
+  const [count, setCount] = useState<number>(0); // keep random count
 
   // for random book
-  const randomBook = () => {
-    let result = Math.floor(Math.random() * BookList.length);
+  const randomBook: Function = () => {
+    let result: number = Math.floor(Math.random() * BookList.length);
     // document.title = BookList[result].name; // change title by book's name
     setBook(BookList[result]);
   };
@@ -61,7 +63,7 @@ function App() {
           </a>
         </div>
       </div>
-      <ImgShow img={book.img} url={book.link} name={book.name} />
+      <ImgShow img={book.img ?? ""} url={book.link ?? ""} name={book.name ?? ""} />
       <div className="text-center p-1 text-slate-600">
         <a
           title="คลิกเพื่อค้นหาผู้เขียนบน Google"

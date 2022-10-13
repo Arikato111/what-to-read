@@ -3,9 +3,9 @@ import ImgShow from "./components/ImgShow";
 import { Link } from "react-router-dom";
 
 import BigButton from "./components/BigButton";
-import { useEffect } from "react";
+import { FC, useEffect } from "react";
 
-const ShowAllBook = () => {
+const ShowAllBook: FC = () => {
   return (
     <div className="grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 2xl:grid-cols-5 grid">
       {/* loop to show all books */}
@@ -31,7 +31,7 @@ const ShowAllBook = () => {
                 ผู้เขียน <b>{book.writer}</b>
               </a>
             </div>
-            <ImgShow img={book.img} url={book.link} name={book.name} />
+            <ImgShow img={book.img} url={book.link ?? ""} name={book.name} />
             <div></div>
           </div>
         );
@@ -39,7 +39,7 @@ const ShowAllBook = () => {
     </div>
   );
 };
-export default function AllBook() {
+const AllBook: FC = () => {
   useEffect(() => {
     document.title = "หนังสือทั้งหมด";
   }, []);
@@ -52,10 +52,12 @@ export default function AllBook() {
       </h1>
       <div className="text-center text-4xl  pb-5 m-1">
         <Link to={"/"}>
-          <BigButton title="อ่านอะไรดี" onclick={() => {}} />
+          <BigButton title="อ่านอะไรดี" onclick={() => { }} />
         </Link>
       </div>
       <ShowAllBook />
     </main>
   );
 }
+
+export default AllBook

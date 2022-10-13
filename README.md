@@ -8,7 +8,7 @@
 
 ## Inside it
 
-- React + Vite + Tailwindcss
+- React + Vite + Tailwindcss + TypeScript
 - react-router-dom
 - atropos
 - Book data is in Data/BookList.json
