@@ -1,4 +1,4 @@
-# อ่านอะไรดี ? [Typescript]
+# อ่านอะไรดี ?
 
 ## Get started
 
