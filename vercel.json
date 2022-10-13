@@ -7,8 +7,13 @@
     ],
     "headers": [
         {
-            "key": "X-Frame-Options",
-            "value": "deny"
+            "source": "*",
+            "headers": [
+                {
+                    "key": "X-Frame-Options",
+                    "value": "deny"
+                }
+            ]
         }
     ]
 }
