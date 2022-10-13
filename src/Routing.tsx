@@ -3,8 +3,9 @@ import App from "./App";
 import AllBook from "./AllBook";
 import Notfound from "./Notfound";
 import SingleBook from "./SingleBook";
+import { FC } from "react";
 
-export default function Routing() {
+const Routing: FC = () => {
   return (
     <Router>
       <Routes>
@@ -16,3 +17,5 @@ export default function Routing() {
     </Router>
   );
 }
+
+export default Routing
