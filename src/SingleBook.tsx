@@ -15,7 +15,7 @@ const SingleBook: FC = () => {
   }
   document.title = theBook.name ?? "ไม่พบหนังสือ";
   return (
-    <main className="box-border  bg-purple-50  min-h-screen">
+    <main className="box-border  bg-purple-50 dark:bg-slate-900  min-h-screen">
       <div className="flex min-h-screen justify-center items-center flex-col">
         <Atropos shadowScale={1} activeOffset={40}>
           <ImgShow name={theBook.name ?? "ไม่พบชื่อหนังสือ"} img={theBook.img ?? ""} url={theBook.link ?? ""} />
