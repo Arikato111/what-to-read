@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 
 import BigButton from "./components/BigButton";
 import { FC, useEffect } from "react";
+import ToggleMode from "./components/ToggleMode";
 
 const ShowAllBook: FC = () => {
 
@@ -46,8 +47,9 @@ const AllBook: FC = () => {
   }, []);
   return (
     <main className="dark:bg-slate-900 m-0">
+      <ToggleMode />
       <h1 className="text-center text-4xl">
-        <span className="text-2xl sm:text-4xl bg-purple-700 shadow shadow-slate-400 text-white py-1 px-5 rounded-lg">
+        <span className="text-2xl sm:text-4xl bg-purple-700 dark:bg-purple-800 shadow-md shadow-slate-400 dark:shadow-gray-700 text-white py-1 px-5 rounded-lg">
           รายการหนังสือทั้งหมด
         </span>
       </h1>

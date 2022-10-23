@@ -7,6 +7,7 @@ import { BookInput } from "./components/interface";
 import Github from "./components/Github";
 import ImgShow from "./components/ImgShow";
 import BigButton from "./components/BigButton";
+import ToggleMode from "./components/ToggleMode";
 
 const App: FC = () => {
 
@@ -39,6 +40,7 @@ const App: FC = () => {
   }, [book]);
   return (
     <main className="box-border  bg-purple-50 dark:bg-slate-900 min-h-screen">
+      <ToggleMode />
       <div className="text-center text-4xl pt-10 pb-5">
         <BigButton
           title="อ่านอะไรดี"
