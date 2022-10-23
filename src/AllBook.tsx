@@ -6,13 +6,14 @@ import BigButton from "./components/BigButton";
 import { FC, useEffect } from "react";
 
 const ShowAllBook: FC = () => {
+
   return (
     <div className="grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 2xl:grid-cols-5 grid">
       {/* loop to show all books */}
       {BookList.map((book, id) => {
         return (
           <div key={id} className="pb-10">
-            <div className="text-center text-slate-800 text-xl sm:text-lg">
+            <div className="text-center text-slate-800 dark:text-white  text-xl sm:text-lg">
               <Link
                 className="hover:underline inline-block transition-all"
                 to={`/${book.name}`}
@@ -21,7 +22,7 @@ const ShowAllBook: FC = () => {
                 <b>{book.name}</b>
               </Link>
             </div>
-            <div className="text-center text-lg sm:text-base p-1 text-slate-600">
+            <div className="text-center text-lg sm:text-base p-1 text-slate-600 dark:text-white">
               <a
                 title="คลิกเพื่อค้นหาผู้เขียนบน Google"
                 className="underline sm:no-underline hover:underline inline-block"
@@ -44,8 +45,8 @@ const AllBook: FC = () => {
     document.title = "หนังสือทั้งหมด";
   }, []);
   return (
-    <main>
-      <h1 className="text-center text-4xl m-1">
+    <main className="dark:bg-slate-900 m-0">
+      <h1 className="text-center text-4xl">
         <span className="text-2xl sm:text-4xl bg-purple-700 shadow shadow-slate-400 text-white py-1 px-5 rounded-lg">
           รายการหนังสือทั้งหมด
         </span>

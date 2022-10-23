@@ -3,9 +3,11 @@ import App from "./App";
 import AllBook from "./AllBook";
 import Notfound from "./Notfound";
 import SingleBook from "./SingleBook";
-import { FC } from "react";
+import { FC, useEffect } from "react";
+import { checkTheme } from "./components/CheckTheme";
 
 const Routing: FC = () => {
+  checkTheme();
   return (
     <Router>
       <Routes>
