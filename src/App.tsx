@@ -77,7 +77,7 @@ const App: FC = () => {
         </a>
       </div>
       <Link to={"/books"}>
-        <div className="shadow hover:shadow-gray-400 fixed bottom-0 left-0 p-2 m-2 bg-yellow-200 dark:bg-yellow-600 hover:bg-yellow-300 dark:hover:bg-yellow-500 text-slate-800 dark:text-white rounded transition-all duration-300">
+        <div className="shadow hover:shadow-gray-400 absolute bottom-0 left-0 p-2 m-2 bg-yellow-200 dark:bg-yellow-600 hover:bg-yellow-300 dark:hover:bg-yellow-500 text-slate-800 dark:text-white rounded transition-all duration-300">
           หนังสือทั้งหมด
         </div>
       </Link>
