@@ -1,13 +1,12 @@
 import { FC, useEffect } from "react";
 import { useState } from "react";
 import BookList from "./Data/BookList.json";
-import { Link } from "react-router-dom";
 import { BookInput } from "./components/interface";
 
-import Github from "./components/Github";
 import ImgShow from "./components/ImgShow";
 import BigButton from "./components/BigButton";
 import ToggleMode from "./components/ToggleMode";
+import Footer from "./components/Footer";
 
 const App: FC = () => {
 
@@ -39,7 +38,7 @@ const App: FC = () => {
     }
   }, [book]);
   return (
-    <main className="box-border  bg-purple-50 dark:bg-slate-900 min-h-screen">
+    <><main className="box-border  bg-purple-50 dark:bg-slate-900 min-h-screen">
       <ToggleMode />
       <div className="text-center text-4xl pt-10 pb-5">
         <BigButton
@@ -50,8 +49,7 @@ const App: FC = () => {
               setCount(10);
             }
             randomBook();
-          }}
-        />
+          }} />
       </div>
       <div className="text-center">
         <div className="text-2xl p-2 text-slate-600 dark:text-white font-bold">
@@ -65,6 +63,7 @@ const App: FC = () => {
           </a>
         </div>
       </div>
+
       <ImgShow img={book.img ?? ""} url={book.link ?? ""} name={book.name ?? ""} />
       <div className="text-center p-1 text-slate-600 dark:text-white">
         <a
@@ -76,13 +75,7 @@ const App: FC = () => {
           ผู้เขียน <b>{book.writer}</b>
         </a>
       </div>
-      <Link to={"/books"}>
-        <div className="shadow hover:shadow-gray-400 absolute bottom-0 left-0 p-2 m-2 bg-yellow-200 dark:bg-yellow-600 hover:bg-yellow-300 dark:hover:bg-yellow-500 text-slate-800 dark:text-white rounded transition-all duration-300">
-          หนังสือทั้งหมด
-        </div>
-      </Link>
-      <Github />
-    </main>
+    </main><Footer /></>
   );
 }
 
