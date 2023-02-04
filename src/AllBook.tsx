@@ -49,7 +49,7 @@ const AllBook: FC = () => {
     <main className="dark:bg-slate-900 m-0">
       <ToggleMode />
       <h1 className="text-center text-4xl">
-        <span className="text-2xl sm:text-4xl bg-purple-700 dark:bg-purple-800 shadow-md shadow-slate-400 dark:shadow-gray-700 text-white py-1 px-5 rounded-lg">
+        <span className="text-2xl sm:text-3xl bg-purple-700 dark:bg-purple-800 shadow-slate-400 dark:shadow-gray-700 text-white py-1 px-4 rounded-lg inline-block">
           รายการหนังสือทั้งหมด
         </span>
       </h1>
