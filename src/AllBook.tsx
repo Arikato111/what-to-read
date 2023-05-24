@@ -7,7 +7,6 @@ import { FC, useEffect } from "react";
 import ToggleMode from "./components/ToggleMode";
 
 const ShowAllBook: FC = () => {
-
   return (
     <div className="grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 2xl:grid-cols-5 grid">
       {/* loop to show all books */}
@@ -41,6 +40,7 @@ const ShowAllBook: FC = () => {
     </div>
   );
 };
+
 const AllBook: FC = () => {
   useEffect(() => {
     document.title = "หนังสือทั้งหมด";
@@ -48,19 +48,19 @@ const AllBook: FC = () => {
   return (
     <main className="dark:bg-slate-900 m-0">
       <ToggleMode />
-      <h1 className="text-center text-4xl">
-        <span className="text-2xl sm:text-3xl bg-purple-700 dark:bg-purple-800 shadow-slate-400 dark:shadow-gray-700 text-white py-1 px-4 rounded-lg inline-block">
+      <h1 className="text-center text-4xl px-2">
+        <span className="w-full text-2xl sm:text-2xl bg-purple-700 dark:bg-purple-700 shadow-slate-400 dark:shadow-gray-700 text-white py-1 px-4 rounded-lg inline-block">
           รายการหนังสือทั้งหมด
         </span>
       </h1>
       <div className="text-center text-4xl  pb-5 m-1">
         <Link to={"/"}>
-          <BigButton title="อ่านอะไรดี" onclick={() => { }} />
+          <BigButton title="อ่านอะไรดี" onclick={() => {}} />
         </Link>
       </div>
       <ShowAllBook />
     </main>
   );
-}
+};
 
-export default AllBook
+export default AllBook;
