@@ -7,6 +7,15 @@
 
 # <p align="center">อ่านอะไรดี ?</p>
 
+<p align="center">
+    <img alt="GitHub Top Language" src="https://img.shields.io/github/languages/top/arikato111/what-to-read" />
+    <img alt="Github License" src="https://img.shields.io/github/license/arikato111/what-to-read" />
+    <img alt="GitHub Issues" src="https://img.shields.io/github/issues/arikato111/what-to-read" />
+    <img alt="GitHub Pull Requests" src="https://img.shields.io/github/issues-pr/arikato111/what-to-read" />
+    <img alt="GitHub Contributors" src="https://img.shields.io/github/contributors/arikato111/what-to-read" />
+    <img alt="" src="https://img.shields.io/github/repo-size/arikato111/what-to-read" />
+</p>
+
 ## Get started
 
 - clone repository
