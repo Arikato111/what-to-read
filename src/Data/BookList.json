@@ -247,8 +247,8 @@
   {
     "name": "ประวัติย่อของกาลเวลา",
     "writer": "Stephen Hawking",
-    "img": "https://storage.naiin.com/system/application/bookstore/resource/product/200903/87352/51c81a371dbf5_XXL.gif",
-    "link": "https://www.naiin.com/product/detail/87352"
+    "img": "https://storage.naiin.com/system/application/bookstore/resource/product/202307/585875/1000263313_front_XXL.jpg",
+    "link": "https://www.naiin.com/product/detail/585875"
   },
   {
     "name": "ต้นส้มแสนรัก",
@@ -333,5 +333,17 @@
     "writer": "เยอิ ธีโอโดรา โอซากิ",
     "img": "https://storage.naiin.com/system/application/bookstore/resource/product/202309/589789/1000264751_front_XXL.jpg",
     "link": "https://www.naiin.com/product/detail/589789"
+  },
+  {
+    "name": "จิตวิทยาสายดาร์ก",
+    "writer": "Dr.Hiro",
+    "img": "https://storage.naiin.com/system/application/bookstore/resource/product/202304/577274/1000260516_front_XXL.jpg",
+    "link": "https://www.naiin.com/product/detail/577274"
+  },
+  {
+    "name": "งานวิจัยเริ่มไม่ยาก",
+    "writer": "Thomas S. Mullaney และ Christopher Rea",
+    "img": "https://storage.naiin.com/system/application/bookstore/resource/product/202403/607504/1000270901_front_XXL.jpg",
+    "link": "https://www.naiin.com/product/detail/607504"
   }
 ]
