@@ -351,5 +351,17 @@
     "writer": "Sigmund Freud",
     "img": "https://storage.naiin.com/system/application/bookstore/resource/product/202410/625258/1000276069_front_XXL.jpg",
     "link": "https://www.naiin.com/product/detail/625258"
+  },
+  {
+    "name": "Linux Basics for Hackers",
+    "writer": "OccupyTheWeb",
+    "img": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fm.media-amazon.com%2Fimages%2FI%2F81FX4OK2njL._SL1500_.jpg&f=1&nofb=1&ipt=57844233f21e02f7831ac76951d665608e866ef4c614e0536a6df3b734588611",
+    "link": "https://www.amazon.com/Linux-Basics-Hackers-Networking-Scripting/dp/1593278551"
+  },
+  {
+    "name": "Getting Started Becoming a Master Hacker",
+    "writer": "Occupytheweb",
+    "img": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fm.media-amazon.com%2Fimages%2FI%2F51Ej9rLO72L.jpg&f=1&nofb=1&ipt=67818401c19207f500cf4f56418c2b3e33903df044d9b442892f4aaa65896724",
+    "link": "https://www.amazon.com/Getting-Started-Becoming-Master-Hacker/dp/1711729299"
   }
 ]
